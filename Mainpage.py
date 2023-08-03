@@ -111,6 +111,11 @@ def dashboard(username):
                      font =("bold", 20))
     welcome_lb.pack(pady=10)
 
+    home_btn= tk.Button(dashboard_frame,
+                          text="HOME", bg="gray", fg="white",
+                          font=("bold",15), width=20, command=homepage)
+    home_btn.pack(side=tk.BOTTOM, pady=10)
+    
     logout_btn= tk.Button(dashboard_frame,
                           text="Logout", bg="blue", fg="white",
                           font=("bold",15), width=20)
