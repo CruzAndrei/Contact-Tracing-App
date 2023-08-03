@@ -59,6 +59,14 @@ def register_page():
                         highlightthickness=2, highlightbackground="gray")
     password.place(x=50, y=160, width=150, height=30)
 
+    mobile_number= tk.Label(register_frame, text="Mobile Number: ", font=("bold",12))
+    mobile_number.place(x=60, y=220)
+
+    mobile = tk.Entry(register_frame, font=("bold", 15),
+                        bd=0, highlightcolor="#158aff",
+                        highlightthickness=2, highlightbackground="gray")
+    mobile.place(x=50, y=250, width=150, height=30)
+
     register_frame.pack()
     register_frame.pack_propagate(False)
     register_frame.configure(height=600, width=250)
