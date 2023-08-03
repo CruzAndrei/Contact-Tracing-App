@@ -105,6 +105,11 @@ def message_box(msg):
     message_frame.place(x=120, y=80, width=300, height=350)
 
 def dashboard(username):
+    
+    def logout():
+        dashboard_frame.destroy()
+        login_page()
+    
     dashboard_frame = tk.Frame(root)
 
     welcome_lb = tk.Label(dashboard_frame, text=f'{username}\n Welcome to the App!',
