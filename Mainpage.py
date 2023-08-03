@@ -113,10 +113,12 @@ def login_page():
     def verification2():
         if username.get() != "":
             if password.get() !="":
-                
+
                 if check_existence1(username.get()):
                     if check_existence2(username=username.get(),
                                        password=password.get()):
+                        name = username.get()
+                        login_frame.destroy()
     
 
     login_frame = tk.Frame(root)
