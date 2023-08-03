@@ -44,4 +44,7 @@ covid_entry.place(x=15, y=350)
 tester_entry.place(x=15, y=430)
 date_entry.place(x=15, y=500)
 
+register = Button(screen, text = "Register", width= "50", height="2")
+register.place(x=15, y=550)
+
 screen.mainloop()
