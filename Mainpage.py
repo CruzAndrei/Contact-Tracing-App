@@ -45,6 +45,7 @@ def login_page():
 def register_page():
 
     def fwrlogin_page():
+        register_frame.destroy()
         login_page()
 
     register_frame = tk.Frame(root)
