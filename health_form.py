@@ -23,4 +23,11 @@ symptom_exposure.place(x=15, y=310)
 covid_tester.place(x=15, y=390)
 date_today.place(x=15, y=480)
 
+vax = StringVar()
+symptom = StringVar()
+exposure = StringVar()
+covid = StringVar()
+tester = StringVar()
+date = StringVar()
+
 screen.mainloop()
