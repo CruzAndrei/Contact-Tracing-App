@@ -46,7 +46,10 @@ def register_page():
     register_frame = tk.Frame(root)
     username_lb = tk.Label(register_frame, text="Enter Username: ", font=("bold", 12))
     username_lb.place(x=60, y=20)
-
+    username = tk.Entry(register_frame, font=("bold", 15),
+                        bd=0, highlightcolor="#158aff",
+                        highlightthickness=2, highlightbackground="gray")
+    username.place(x=50, y=60, width=150, height=30)
 
     register_frame.pack()
     register_frame.pack_propagate(False)
