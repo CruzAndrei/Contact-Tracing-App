@@ -129,11 +129,13 @@ def register_page():
             if password.get() != '':
                 if mobile.get() != '':
                     if email.get() != '':
-                        response = register_account(username=username.get(), 
+                        if not check_existence1(username.get()):
+
+                            response = register_account(username=username.get(), 
                                                         password=password.get(),
                                                         mobile=mobile.get(), 
                                                         email=email.get())
-                        if response:
+                            if response:
                                 username.delete(0, tk.END)
                                 password.delete(0, tk.END)
                                 mobile.delete(0, tk.END)
