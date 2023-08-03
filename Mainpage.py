@@ -29,6 +29,32 @@ def create_database():
         connection.commit()
         connection.close()
 
+def register_account(username, password, mobile, email):
+    try: 
+        connection = sqlite3.connect("accounts_data.db")
+
+        cursor = connection.cursor()
+        cursor.execute(f"""
+
+        INSERT INTO accounts VALUES('{username}', '{password}', '{mobile}', '{email}')
+            
+        """)
+
+        connection.commit()
+
+        cursor.execute("""
+        SELECT * FROM accounts
+        """)
+
+        connection.commit()
+        print(cursor.fetchall())
+
+        connection.close()
+        return True
+    
+    except Exception as error:
+        return False
+
 def login_page():
     login_frame = tk.Frame(root)
 
