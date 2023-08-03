@@ -113,9 +113,9 @@ def dashboard(username):
 
     home_btn= tk.Button(dashboard_frame,
                           text="HOME", bg="gray", fg="white",
-                          font=("bold",15), width=20, command=homepage)
+                          font=("bold",15), width=20)
     home_btn.pack(side=tk.BOTTOM, pady=10)
-    
+
     logout_btn= tk.Button(dashboard_frame,
                           text="Logout", bg="blue", fg="white",
                           font=("bold",15), width=20)
