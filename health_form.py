@@ -4,6 +4,12 @@ from tkinter import *
 from tkinter import filedialog
 
 def save_info():
+    vax_info = vax.get()
+    symptom_info = symptom.get()
+    exposure_info = exposure.get()
+    covid_info = covid.get()
+    tester_info = tester.get()
+    date_info = date.get()
 
 screen = Tk()
 screen.geometry("500x600")
