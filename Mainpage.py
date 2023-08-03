@@ -152,6 +152,21 @@ def dashboard(username):
 
             contact_frame.pack(pady=20)
 
+        def covid_page():
+            covid_frame = tk.Frame(main_frame)
+
+            covid19_page1 = tk.Label(covid_frame, text="Signs of Covid 19", font=("bold",30))
+            covid19_page2 = tk.Label(covid_frame, text="Possible Symptoms", font=("bold",20))
+            covid19_page3 = tk.Label(covid_frame, text="Fever\nCough\nShortness of breath\nFatigue\nHeadache\nSore throat\nRunny nose", font=("bold",10))
+           
+           
+            covid19_page1.pack()
+            covid19_page2.pack()
+            covid19_page3.pack()
+
+
+            covid_frame.pack(pady=20)
+
         def hide_indicators():
             home_lbl.config(bg="#c3c3c3")
             health_lbl.config(bg="#c3c3c3")
@@ -192,7 +207,8 @@ def dashboard(username):
         contact_lbl = tk.Label(option_frame, text="", bg="#c3c3c3")
         contact_lbl.place(x=3, y=200, width=5, height=40)
 
-        covid_btn = tk.Button(option_frame, text="COVID-19", font=("bold", 15), fg="#158aff", bd=0, bg="#c3c3c3")
+        covid_btn = tk.Button(option_frame, text="COVID-19", font=("bold", 15), fg="#158aff", bd=0, bg="#c3c3c3", 
+                              command=lambda: indicate(covid_lbl, covid_page))
         covid_btn.place(x=10, y=275)
         covid_lbl = tk.Label(option_frame, text="", bg="#c3c3c3")
         covid_lbl.place(x=3, y=275, width=5, height=40)
