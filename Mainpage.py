@@ -109,10 +109,17 @@ def dashboard(username):
     def logout():
         dashboard_frame.destroy()
         login_page()
-        
+
         root = tk.Tk()
         root.geometry("500x400")
-        root.title("Contract Tracing App")        
+        root.title("Contract Tracing App") 
+
+        main_frame = tk.Frame(root, highlightbackground='blue',
+                                highlightthickness=2)
+
+        main_frame.pack(side=tk.LEFT)
+        main_frame.pack_propagate(False)
+        main_frame.configure(width=400, height=400)       
     
     dashboard_frame = tk.Frame(root)
 
