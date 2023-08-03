@@ -37,4 +37,11 @@ covid_entry = Entry(textvariable= covid, width= "30")
 tester_entry = Entry(textvariable= tester, width= "30")
 date_entry = Entry(textvariable= date, width="30")
 
+vax_entry.place(x=15, y=130)
+symptom_entry.place(x=15, y=200)
+exposure_entry.place(x=15, y=270)
+covid_entry.place(x=15, y=350)
+tester_entry.place(x=15, y=430)
+date_entry.place(x=15, y=500)
+
 screen.mainloop()
