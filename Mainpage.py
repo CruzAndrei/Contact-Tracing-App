@@ -131,7 +131,12 @@ def dashboard(username):
         def delete_pages():
             for frame in main_frame.winfo_children():
                 frame.destroy()
-
+                
+        def indicate(lb, page):
+            hide_indicators()
+            lb.config(bg="#158aff")
+            delete_pages()
+            page()
 
 
             
