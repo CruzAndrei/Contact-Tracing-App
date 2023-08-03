@@ -137,6 +137,20 @@ def dashboard(username):
             form_btn.place(x=140, y=300)
 
             health_frame.pack(pady=20)
+            
+        def contact_page():
+            contact_frame = tk.Frame(main_frame)
+
+            contact_details1 = tk.Label(contact_frame,text="\nEmergency Hotline\t\t911\nPNP\t\t117\nRegion 1\t\t0998-583-5732\nRegion 2\t\t0917-504-7971\nRegion3\t\t(045) 598-8580 \nCALABARZON\t\t0977-827-6112\nMIMAROPA\t\t(02) 8637-2895")
+            contact_details2 = tk.Label(contact_frame,text="\nRegion 5\t\t0999-682-4775\nRegion 6\t\t(033) 336-3156\nRegion 7\t\t(032) 414-7399\nRegion 8\t\t(053) 323-3156\nRegion 9\t\t0998-280-8852 \nRegion 10\t\t0917-713-0173\nRegion 11\t\t0917-720-1674")
+            contact_details3 = tk.Label(contact_frame,text="\nRegion 12\t\t(083) 228-1893\nBARMM\t\t(064) 421-4272\nCAR\t\t0917-514-9700\nCARAGA\t\t0945-237-8066\nNCR\t\t0999-881-1535")
+
+            contact_details1.pack()
+            contact_details2.pack()
+            contact_details3.pack()
+            
+
+            contact_frame.pack(pady=20)
 
         def hide_indicators():
             home_lbl.config(bg="#c3c3c3")
