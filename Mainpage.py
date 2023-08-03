@@ -42,5 +42,5 @@ def login_page():
 
     login_frame.configure(height=400, width=250)
 
-
+login_page()
 root.mainloop()
