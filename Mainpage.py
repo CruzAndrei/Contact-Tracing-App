@@ -133,6 +133,11 @@ def dashboard(username):
         contact_lbl = tk.Label(option_frame, text="", bg="#c3c3c3")
         contact_lbl.place(x=3, y=200, width=5, height=40)
 
+        covid_btn = tk.Button(option_frame, text="COVID-19", font=("bold", 15), fg="#158aff", bd=0, bg="#c3c3c3")
+        covid_btn.place(x=10, y=275)
+        covid_lbl = tk.Label(option_frame, text="", bg="#c3c3c3")
+        covid_lbl.place(x=3, y=275, width=5, height=40)
+
 
         option_frame.pack(side=tk.LEFT)
         option_frame.pack_propagate(False)
