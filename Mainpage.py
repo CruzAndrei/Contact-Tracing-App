@@ -116,6 +116,12 @@ def dashboard(username):
 
         main_frame = tk.Frame(root, highlightbackground='blue',
                                 highlightthickness=2)
+        
+        option_frame = tk.Frame(root, bg="#c3c3c3")
+        option_frame.pack(side=tk.LEFT)
+        option_frame.pack_propagate(False)
+        option_frame.configure(width=125, height=600)
+        
 
         main_frame.pack(side=tk.LEFT)
         main_frame.pack_propagate(False)
