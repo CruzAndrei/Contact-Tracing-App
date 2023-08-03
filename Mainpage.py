@@ -126,6 +126,7 @@ def login_page():
                                        password=password.get()):
                         name = username.get()
                         login_frame.destroy()
+                        dashboard(username=name)
                      
                     else:
                         message_box(msg="\n\n\n\nINCORRECT \n\n USERNAME/PASSWORD")
