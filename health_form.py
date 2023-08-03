@@ -3,6 +3,8 @@
 from tkinter import *
 from tkinter import filedialog
 
+def save_info():
+
 screen = Tk()
 screen.geometry("500x600")
 screen.title("Health Decleration Form")
