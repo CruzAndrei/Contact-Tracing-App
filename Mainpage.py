@@ -128,6 +128,12 @@ def dashboard(username):
             contact_lbl.config(bg="#c3c3c3")
             covid_lbl.config(bg="#c3c3c3")
 
+        def delete_pages():
+            for frame in main_frame.winfo_children():
+                frame.destroy()
+
+
+
             
         main_frame = tk.Frame(root, highlightbackground='blue',
                                 highlightthickness=2)
