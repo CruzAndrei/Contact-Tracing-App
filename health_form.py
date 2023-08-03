@@ -16,5 +16,11 @@ symptom_exposure = Label(text = "Did you have contact with someone with possible
 covid_tester = Label(text="Have you had a swab test for Covid-19 for the past weeks?")
 date_today = Label(text="Today's Date:")
 
+vax_type.place(x=15, y=100)
+pos_symptopm.place(x=15, y=160)
+covid_exposure.place(x=15, y=230)
+symptom_exposure.place(x=15, y=310)
+covid_tester.place(x=15, y=390)
+date_today.place(x=15, y=480)
 
 screen.mainloop()
