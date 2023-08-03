@@ -67,6 +67,14 @@ def register_page():
                         highlightthickness=2, highlightbackground="gray")
     mobile.place(x=50, y=250, width=150, height=30)
 
+    email_add= tk.Label(register_frame, text="Email Address: ", font=("bold",12))
+    email_add.place(x=60, y=310)
+
+    email = tk.Entry(register_frame, font=("bold", 15),
+                        bd=0, highlightcolor="#158aff",
+                        highlightthickness=2, highlightbackground="gray")
+    email.place(x=50, y=340, width=150, height=30)
+
     register_frame.pack()
     register_frame.pack_propagate(False)
     register_frame.configure(height=600, width=250)
