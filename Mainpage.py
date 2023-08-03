@@ -52,7 +52,7 @@ def register_page():
             if password.get() != '':
                 if mobile.get() != '':
                     if email.get() != '':
-                        
+
     register_frame = tk.Frame(root)
     username_lb = tk.Label(register_frame, text="Enter Username: ", font=("bold", 12))
     username_lb.place(x=60, y=20)
@@ -87,7 +87,7 @@ def register_page():
 
     register_btn = tk.Button(register_frame, text="Register",
                              font=("bold", 12), bg="#158aff",
-                             bd=0, underline=True)
+                             bd=0, underline=True, command=verification1)
     register_btn.place(x=50, y=405, width=150 )
 
     login_btn = tk.Button(register_frame, text="Login", fg="#158aff",
