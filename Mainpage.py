@@ -210,6 +210,11 @@ def register_page():
                                 mobile.delete(0, tk.END)
                                 email.delete(0, tk.END) 
                                 message_box("\n\n\n\nCreated Successfully")
+                    else:
+                        message_box(msg="\n\n\n\nINCORRECT \n\n USERNAME/PASSWORD")
+
+                else:
+                    message_box(msg="\n\n\n\nINCORRECT \n\nUSERNAME/PASSWORD")
                                 
             else:
                 message_box(msg="Password is required") 
@@ -261,9 +266,8 @@ def register_page():
     register_frame.pack()
     register_frame.pack_propagate(False)
     register_frame.configure(height=600, width=250)
-#create_database()
-#login_page()
-#message_box()
-#check_existence1("root")
-dashboard()
+create_database()
+login_page()
+message_box()
+check_existence1("root")
 root.mainloop()
