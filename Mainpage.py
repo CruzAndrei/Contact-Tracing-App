@@ -210,11 +210,6 @@ def register_page():
                                 mobile.delete(0, tk.END)
                                 email.delete(0, tk.END) 
                                 message_box("\n\n\n\nCreated Successfully")
-                    else:
-                        message_box(msg="\n\n\n\nINCORRECT \n\n USERNAME/PASSWORD")
-
-                else:
-                    message_box(msg="\n\n\n\nINCORRECT \n\nUSERNAME/PASSWORD")
                                 
             else:
                 message_box(msg="Password is required") 
