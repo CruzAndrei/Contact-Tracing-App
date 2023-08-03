@@ -7,4 +7,9 @@ import sqlite3
 root =tk.Tk()
 root.geometry('500x600')
 root.title('Contact Tracing App')
+
+def login_page():
+
+
+    
 root.mainloop()
