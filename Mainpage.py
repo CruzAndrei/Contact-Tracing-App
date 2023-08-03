@@ -109,11 +109,14 @@ def login_page():
     def fwregister_page():
         login_frame.destroy()
         register_page()
-        
+
     def verification2():
         if username.get() != "":
             if password.get() !="":
-
+                
+                if check_existence1(username.get()):
+                    if check_existence2(username=username.get(),
+                                       password=password.get()):
     
 
     login_frame = tk.Frame(root)
