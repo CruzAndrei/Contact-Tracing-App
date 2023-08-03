@@ -99,7 +99,10 @@ def register_page():
             if password.get() != '':
                 if mobile.get() != '':
                     if email.get() != '':
-
+                        response = register_account(username=username.get(), 
+                                                        password=password.get(),
+                                                        mobile=mobile.get(), 
+                                                        email=email.get())
     register_frame = tk.Frame(root)
     username_lb = tk.Label(register_frame, text="Enter Username: ", font=("bold", 12))
     username_lb.place(x=60, y=20)
