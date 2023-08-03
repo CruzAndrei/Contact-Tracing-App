@@ -119,6 +119,8 @@ def register_page():
                                 password.delete(0, tk.END)
                                 mobile.delete(0, tk.END)
                                 email.delete(0, tk.END) 
+                                message_box("\n\n\n\nCreated Successfully")
+                                
             else:
                 message_box(msg="Password is required") 
         else:
