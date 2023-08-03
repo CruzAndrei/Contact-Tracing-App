@@ -121,6 +121,8 @@ def register_page():
                                 email.delete(0, tk.END) 
             else:
                 message_box(msg="Password is required") 
+        else:
+            message_box(msg="Username is required")    
 
     register_frame = tk.Frame(root)
     username_lb = tk.Label(register_frame, text="Enter Username: ", font=("bold", 12))
