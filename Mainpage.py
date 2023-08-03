@@ -42,5 +42,11 @@ def login_page():
 
     login_frame.configure(height=400, width=250)
 
+def register_page():
+    register_frame = tk.Frame(root)
+    register_frame.pack()
+    register_frame.pack_propagate(False)
+    register_frame.configure(height=600, width=250)
+
 login_page()
 root.mainloop()
