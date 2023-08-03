@@ -31,6 +31,11 @@ def login_page():
                         bg="#158aff", fg="white")
     login_btn.place(x=50, y=220, width=150)
 
+    register_btn = tk.Button(login_frame, text="Register",
+                             font=("bold", 12), bg="#158aff",
+                             bd=0, underline=True)
+    register_btn.place(x=90, y=260 )
+
 
     login_frame.pack(pady=10)
     login_frame.pack_propagate(False)
