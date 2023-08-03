@@ -88,6 +88,7 @@ def message_box(msg):
 def login_page():
 
     def fwregister_page():
+        login_frame.destroy()
         register_page()
     
     login_frame = tk.Frame(root)
