@@ -122,6 +122,13 @@ def dashboard(username):
 
             home_frame.pack(pady=20)
 
+        def hide_indicators():
+            home_lbl.config(bg="#c3c3c3")
+            health_lbl.config(bg="#c3c3c3")
+            contact_lbl.config(bg="#c3c3c3")
+            covid_lbl.config(bg="#c3c3c3")
+
+            
         main_frame = tk.Frame(root, highlightbackground='blue',
                                 highlightthickness=2)
         
