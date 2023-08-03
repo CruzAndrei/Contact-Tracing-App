@@ -13,6 +13,15 @@ def save_info():
 
     print(vax_info, symptom_info, exposure_info, covid_info, tester_info,date_info)
 
+    file = open("user.txt", "w")
+    file.write(vax_info)
+    file.write(symptom_info)
+    file.write(exposure_info)
+    file.write(covid_info)
+    file.write(tester_info)
+    file.write(date_info)
+    file.close()
+    print("User has been registered successfully")
 
 screen = Tk()
 screen.geometry("500x600")
