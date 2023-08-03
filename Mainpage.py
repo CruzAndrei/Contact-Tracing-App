@@ -131,7 +131,7 @@ def dashboard(username):
         def delete_pages():
             for frame in main_frame.winfo_children():
                 frame.destroy()
-                
+
         def indicate(lb, page):
             hide_indicators()
             lb.config(bg="#158aff")
@@ -144,7 +144,8 @@ def dashboard(username):
                                 highlightthickness=2)
         
         option_frame = tk.Frame(root, bg="#c3c3c3")
-        home_btn = tk.Button(option_frame, text="Home", font=("bold", 15), fg="#158aff", bd=0, bg="#c3c3c3")
+        home_btn = tk.Button(option_frame, text="Home", font=("bold", 15), fg="#158aff", bd=0, bg="#c3c3c3",
+                             command=lambda: indicate(home_lbl, home_page))
         home_btn.place(x=10, y=50)
         home_lbl = tk.Label(option_frame, text="", bg="#c3c3c3")
         home_lbl.place(x=3, y=50, width=5, height=40)
