@@ -121,6 +121,19 @@ def dashboard(username):
             home_menu.pack()
 
             home_frame.pack(pady=20)
+            
+        def health_page():           
+            health_frame = tk.Frame(main_frame)
+
+            health_form = tk.Label(health_frame, text="\n\nFill Out\n\nYour Form", font=("bold",30))
+            health_form.pack()
+
+            form_btn = tk.Button(main_frame,text="Health Form",
+                             font=("bold", 12), bg="#158aff",
+                             bd=0, underline=True)
+            form_btn.place(x=140, y=300)
+
+            health_frame.pack(pady=20)
 
         def hide_indicators():
             home_lbl.config(bg="#c3c3c3")
