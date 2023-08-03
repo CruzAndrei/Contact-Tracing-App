@@ -55,6 +55,17 @@ def register_account(username, password, mobile, email):
     except Exception as error:
         return False
 
+def message_box(msg):
+    message_frame = tk.Frame(root, relief=tk.SOLID,
+                             highlightthickness=2, highlightbackground="gray")
+    close_btn = tk.Button(message_frame, text="X", font=("bold", 12),
+                          bd= 0, command=lambda: message_frame.destroy())
+    close_btn.pack(side=tk.TOP, anchor=tk.E)
+
+    message_lb = tk.Label(message_frame, text=msg, font=("bold",15))
+    message_lb.pack(pady=20)
+    message_frame.place(x=120, y=80, width=300, height=350)
+
 def login_page():
     login_frame = tk.Frame(root)
 
