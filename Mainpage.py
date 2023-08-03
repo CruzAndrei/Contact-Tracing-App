@@ -119,6 +119,17 @@ def login_page():
                                        password=password.get()):
                         name = username.get()
                         login_frame.destroy()
+                     
+                    else:
+                        message_box(msg="\n\n\n\nINCORRECT \n\n USERNAME/PASSWORD")
+
+                else:
+                    message_box(msg="\n\n\n\nINCORRECT \n\nUSERNAME/PASSWORD")
+
+            else:
+                message_box(msg="\n\n\nPassword is Required")
+        else:
+            message_box(msg="\n\n\nUsername is Required")                       
     
 
     login_frame = tk.Frame(root)
