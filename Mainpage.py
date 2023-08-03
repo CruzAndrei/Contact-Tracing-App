@@ -51,6 +51,14 @@ def register_page():
                         highlightthickness=2, highlightbackground="gray")
     username.place(x=50, y=60, width=150, height=30)
 
+    password_lb= tk.Label(register_frame, text="Enter Password: ", font=("bold",12))
+    password_lb.place(x=60, y=120)
+
+    password = tk.Entry(register_frame, font=("bold", 15),
+                        bd=0, highlightcolor="#158aff",
+                        highlightthickness=2, highlightbackground="gray")
+    password.place(x=50, y=160, width=150, height=30)
+
     register_frame.pack()
     register_frame.pack_propagate(False)
     register_frame.configure(height=600, width=250)
