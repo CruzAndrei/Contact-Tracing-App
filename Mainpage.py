@@ -26,6 +26,10 @@ def login_page():
                         bd=0, highlightcolor="#158aff",
                         highlightthickness=2, highlightbackground="gray",show ="*")
     password.place(x=50, y=160, width=150, height=30)
+    
+    login_btn = tk.Button(login_frame, text="Login", font=('bold',12),
+                        bg="#158aff", fg="white")
+    login_btn.place(x=50, y=220, width=150)
 
 
     login_frame.pack(pady=10)
