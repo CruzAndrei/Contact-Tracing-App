@@ -30,4 +30,11 @@ covid = StringVar()
 tester = StringVar()
 date = StringVar()
 
+vax_entry = Entry(textvariable= vax, width= "30")
+symptom_entry = Entry(textvariable= symptom, width= "30")
+exposure_entry = Entry(textvariable= exposure, width= "30")
+covid_entry = Entry(textvariable= covid, width= "30")
+tester_entry = Entry(textvariable= tester, width= "30")
+date_entry = Entry(textvariable= date, width="30")
+
 screen.mainloop()
