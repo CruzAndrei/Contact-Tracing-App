@@ -8,6 +8,27 @@ root =tk.Tk()
 root.geometry('500x600')
 root.title('Contact Tracing App')
 
+def create_database():
+    if not os.path.exists("accounts_data.db"):
+        connection = sqlite3.connect("accounts_data.db")
+
+        cursor = connection.cursor()
+        cursor.execute("""
+             
+        CREATE TABLE accounts(
+                       
+        username text,
+        password text,
+        mobile text,
+        email text                
+
+        )
+        
+        """)
+
+        connection.commit()
+        connection.close()
+
 def login_page():
     login_frame = tk.Frame(root)
 
