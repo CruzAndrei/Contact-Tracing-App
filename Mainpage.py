@@ -47,7 +47,12 @@ def register_page():
     def fwrlogin_page():
         register_frame.destroy()
         login_page()
-
+    def verification1():
+        if username.get() != '':
+            if password.get() != '':
+                if mobile.get() != '':
+                    if email.get() != '':
+                        
     register_frame = tk.Frame(root)
     username_lb = tk.Label(register_frame, text="Enter Username: ", font=("bold", 12))
     username_lb.place(x=60, y=20)
