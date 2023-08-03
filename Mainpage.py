@@ -86,6 +86,10 @@ def message_box(msg):
     message_frame.place(x=120, y=80, width=300, height=350)
 
 def login_page():
+
+    def fwregister_page():
+        register_page()
+    
     login_frame = tk.Frame(root)
 
     username_lb = tk.Label(login_frame, text="Enter Username: ", font=("bold", 12))
@@ -193,6 +197,7 @@ def register_page():
     register_frame.pack_propagate(False)
     register_frame.configure(height=600, width=250)
 
-#login_page()
-register_page()
+login_page()
+message_box()
+check_existence1("root")
 root.mainloop()
