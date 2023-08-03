@@ -11,6 +11,9 @@ def save_info():
     tester_info = tester.get()
     date_info = date.get()
 
+    print(vax_info, symptom_info, exposure_info, covid_info, tester_info,date_info)
+
+
 screen = Tk()
 screen.geometry("500x600")
 screen.title("Health Decleration Form")
