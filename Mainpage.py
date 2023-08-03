@@ -114,6 +114,14 @@ def dashboard(username):
         root.geometry("500x400")
         root.title("Contract Tracing App") 
 
+        def home_page():
+            home_frame = tk.Frame(main_frame)
+
+            home_menu = tk.Label(home_frame, text="\n\nWelcome to your \n\nContract Tracing App\n\n", font=("bold",30))
+            home_menu.pack()
+
+            home_frame.pack(pady=20)
+
         main_frame = tk.Frame(root, highlightbackground='blue',
                                 highlightthickness=2)
         
