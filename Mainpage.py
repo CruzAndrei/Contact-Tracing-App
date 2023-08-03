@@ -80,6 +80,10 @@ def register_page():
                              bd=0, underline=True)
     register_btn.place(x=50, y=405, width=150 )
 
+    login_btn = tk.Button(register_frame, text="Login", fg="#158aff",
+                           underline=True, font=("bold", 12), bd=0)
+    login_btn.place(x=100, y=440)
+
 
     register_frame.pack()
     register_frame.pack_propagate(False)
