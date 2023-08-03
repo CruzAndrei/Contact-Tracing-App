@@ -89,6 +89,5 @@ def register_page():
     register_frame.pack_propagate(False)
     register_frame.configure(height=600, width=250)
 
-#login_page()
-register_page()
+login_page()
 root.mainloop()
