@@ -122,7 +122,10 @@ def dashboard(username):
 
             home_frame.pack(pady=20)
             
-        def health_page():           
+        def health_page():        
+            def submit():
+                import health_form
+
             health_frame = tk.Frame(main_frame)
 
             health_form = tk.Label(health_frame, text="\n\nFill Out\n\nYour Form", font=("bold",30))
@@ -130,7 +133,7 @@ def dashboard(username):
 
             form_btn = tk.Button(main_frame,text="Health Form",
                              font=("bold", 12), bg="#158aff",
-                             bd=0, underline=True)
+                             bd=0, underline=True, command=submit)
             form_btn.place(x=140, y=300)
 
             health_frame.pack(pady=20)
