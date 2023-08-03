@@ -123,7 +123,7 @@ def dashboard(username):
 
     logout_btn= tk.Button(dashboard_frame,
                           text="Logout", bg="blue", fg="white",
-                          font=("bold",15), width=20)
+                          font=("bold",15), width=20, command=logout)
     logout_btn.pack(side=tk.BOTTOM, pady=10)
 
     dashboard_frame.pack()
