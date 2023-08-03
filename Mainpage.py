@@ -109,6 +109,10 @@ def dashboard(username):
     def logout():
         dashboard_frame.destroy()
         login_page()
+        
+        root = tk.Tk()
+        root.geometry("500x400")
+        root.title("Contract Tracing App")        
     
     dashboard_frame = tk.Frame(root)
 
