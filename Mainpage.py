@@ -75,6 +75,12 @@ def register_page():
                         highlightthickness=2, highlightbackground="gray")
     email.place(x=50, y=340, width=150, height=30)
 
+    register_btn = tk.Button(register_frame, text="Register",
+                             font=("bold", 12), bg="#158aff",
+                             bd=0, underline=True)
+    register_btn.place(x=50, y=405, width=150 )
+
+
     register_frame.pack()
     register_frame.pack_propagate(False)
     register_frame.configure(height=600, width=250)
