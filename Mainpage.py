@@ -43,6 +43,10 @@ def login_page():
     login_frame.configure(height=400, width=250)
 
 def register_page():
+
+    def fwrlogin_page():
+        login_page()
+
     register_frame = tk.Frame(root)
     username_lb = tk.Label(register_frame, text="Enter Username: ", font=("bold", 12))
     username_lb.place(x=60, y=20)
@@ -89,5 +93,6 @@ def register_page():
     register_frame.pack_propagate(False)
     register_frame.configure(height=600, width=250)
 
-login_page()
+#login_page()
+register_page()
 root.mainloop()
