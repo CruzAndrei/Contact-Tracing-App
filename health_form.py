@@ -23,6 +23,13 @@ def save_info():
     file.close()
     print("User has been registered successfully")
 
+    vax_entry.delete(0, END)
+    symptom_entry.delete(0, END)
+    exposure_entry.delete(0,END)
+    covid_entry.delete(0,END)
+    tester_entry.delete(0,END)
+    date_entry.delete(0, END)
+
 screen = Tk()
 screen.geometry("500x600")
 screen.title("Health Decleration Form")
