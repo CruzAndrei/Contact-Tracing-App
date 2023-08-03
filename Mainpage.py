@@ -54,6 +54,25 @@ def register_account(username, password, mobile, email):
     
     except Exception as error:
         return False
+    
+def check_existence1(username):
+    connection = sqlite3.connect("accounts_data.db")
+
+    cursor = connection.cursor()
+    cursor.execute(f"""
+
+    SELECT username FROM accounts WHERE username == "{username}"
+
+    """)
+
+    connection.commit()
+
+    response = cursor.fetchall()
+    print(response)
+    return response
+
+
+    connection.close()
 
 def message_box(msg):
     message_frame = tk.Frame(root, relief=tk.SOLID,
