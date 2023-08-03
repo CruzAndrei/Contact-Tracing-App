@@ -104,6 +104,13 @@ def message_box(msg):
     message_lb.pack(pady=20)
     message_frame.place(x=120, y=80, width=300, height=350)
 
+def dashboard(username):
+    dashboard_frame = tk.Frame(root)
+    dashboard_frame.pack()
+    dashboard_frame.pack_propagate(False)
+    dashboard_frame.configure(height=400, width=300)
+
+
 def login_page():
 
     def fwregister_page():
@@ -238,8 +245,9 @@ def register_page():
     register_frame.pack()
     register_frame.pack_propagate(False)
     register_frame.configure(height=600, width=250)
-
-login_page()
-message_box()
-check_existence1("root")
+#create_database()
+#login_page()
+#message_box()
+#check_existence1("root")
+dashboard()
 root.mainloop()
