@@ -151,7 +151,7 @@ def login_page():
     password.place(x=50, y=160, width=150, height=30)
     
     login_btn = tk.Button(login_frame, text="Login", font=('bold',12),
-                        bg="#158aff", fg="white")
+                        bg="#158aff", fg="white", command=verification2)
     login_btn.place(x=50, y=220, width=150)
 
     register_btn = tk.Button(login_frame, text="Register",
