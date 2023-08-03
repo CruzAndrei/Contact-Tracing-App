@@ -118,6 +118,9 @@ def dashboard(username):
                                 highlightthickness=2)
         
         option_frame = tk.Frame(root, bg="#c3c3c3")
+        home_btn = tk.Button(option_frame, text="Home", font=("bold", 15), fg="#158aff", bd=0, bg="#c3c3c3")
+        home_btn.place(x=10, y=50)
+
         option_frame.pack(side=tk.LEFT)
         option_frame.pack_propagate(False)
         option_frame.configure(width=125, height=600)
