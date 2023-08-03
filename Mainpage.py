@@ -103,6 +103,11 @@ def register_page():
                                                         password=password.get(),
                                                         mobile=mobile.get(), 
                                                         email=email.get())
+                        if response:
+                                username.delete(0, tk.END)
+                                password.delete(0, tk.END)
+                                mobile.delete(0, tk.END)
+                                email.delete(0, tk.END)                        
     register_frame = tk.Frame(root)
     username_lb = tk.Label(register_frame, text="Enter Username: ", font=("bold", 12))
     username_lb.place(x=60, y=20)
