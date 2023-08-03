@@ -92,7 +92,7 @@ def check_existence2(username,password):
 
 
     connection.close()
-    
+
 def message_box(msg):
     message_frame = tk.Frame(root, relief=tk.SOLID,
                              highlightthickness=2, highlightbackground="gray")
@@ -109,7 +109,10 @@ def login_page():
     def fwregister_page():
         login_frame.destroy()
         register_page()
-
+        
+    def verification2():
+        if username.get() != "":
+            if password.get() !="":
 
     
 
