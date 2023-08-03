@@ -114,7 +114,7 @@ def login_page():
 
     register_btn = tk.Button(login_frame, text="Register",
                              font=("bold", 12), bg="#158aff",
-                             bd=0, underline=True)
+                             bd=0, underline=True, command=fwregister_page)
     register_btn.place(x=90, y=260 )
 
 
